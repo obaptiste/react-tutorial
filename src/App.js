@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from './components/Footer';
+import HeaderBar from './components/Header';
+import { ThemeProvider } from 'styled-components';
+
+
 
 function App() {
+
+  const [ color, setColor] = React.useState('');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <HeaderBar/>
+      <main>
+        <span>Please enter your favourite color</span>
+        <input type="text" value={color} onChange={e => setColor(e.target.value)} />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Your favourite color is {color}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </main>
     </div>
   );
 }
