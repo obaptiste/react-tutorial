@@ -1,18 +1,14 @@
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
-/** @jsx jsx */
+import React from "react";
+import { css, jsx } from "@emotion/core";
 
-import React from 'react';
-import { css, jsx } from '@emotion/core';
-
-import styled from 'styled-components';
-
-
-export default function HeaderBar(props){
-
+export default function HeaderBar(props) {
   let text = props.color == "yellow" ? " black" : "white";
 
   return (
-    <nav css={css`
+    // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
+    /** @jsx jsx */
+    <nav
+      css={css`
       background-color: ${props.color};
       height:100px;
       width:100%;
@@ -26,10 +22,9 @@ export default function HeaderBar(props){
         &:hover {
           color:pink;
         }
-      `}>
+      `}
+    >
       <h1>React Tutorial</h1>
     </nav>
-    
-    );
-
+  );
 }
