@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import HeaderBar from "./components/Header";
+import Footer from "./components/Footer";
 import ColorChangeButton from "./components/ColorChangeButton";
 
 function App() {
@@ -23,9 +24,10 @@ function App() {
   return (
     <div className="App">
       <HeaderBar color={colors[colorIndex + 1]} />
-      <main>
+      <main style={{ display: "flex", justifyContent: "center" }}>
         <ColorChangeButton colorChanged={handleColorChange}></ColorChangeButton>
       </main>
+      <Footer />
     </div>
   );
 }

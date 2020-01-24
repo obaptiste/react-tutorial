@@ -2,7 +2,7 @@ import React from "react";
 import { css, jsx } from "@emotion/core";
 
 export default function HeaderBar(props) {
-  let text = props.color === "yellow" ? " black" : "white";
+  let text = props.color === "PaleGoldenRod" ? " black" : "white";
 
   return (
     // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
@@ -14,10 +14,11 @@ export default function HeaderBar(props) {
       width:100%;
       display: flex;
       justify-content: center;
+      align-items:center;
       margin-bottom:5%;
       h1 {
+
         font-size: 18px;
-        margin-top:5%;
         color: ${text};
         &:hover {
           color:pink;
