@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import HeaderBar from "./components/Header";
+import ColorChangeButton from "./components/ColorChangeButton";
 
 function App() {
   const [colorIndex, setColorIndex] = React.useState(1);
@@ -23,7 +24,7 @@ function App() {
     <div className="App">
       <HeaderBar color={colors[colorIndex + 1]} />
       <main>
-        <button onClick={handleColorChange}>Change background</button>
+        <ColorChangeButton colorChanged={handleColorChange}></ColorChangeButton>
       </main>
     </div>
   );

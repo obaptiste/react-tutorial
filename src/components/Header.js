@@ -2,7 +2,7 @@ import React from "react";
 import { css, jsx } from "@emotion/core";
 
 export default function HeaderBar(props) {
-  let text = props.color == "yellow" ? " black" : "white";
+  let text = props.color === "yellow" ? " black" : "white";
 
   return (
     // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
