@@ -7,11 +7,13 @@ import { css, jsx } from '@emotion/core';
 import styled from 'styled-components';
 
 
-export default function HeaderBar(){
+export default function HeaderBar(props){
+
+  let text = props.color == "yellow" ? " black" : "white";
 
   return (
     <nav css={css`
-      background-color: blue;
+      background-color: ${props.color};
       height:100px;
       width:100%;
       display: flex;
@@ -20,7 +22,7 @@ export default function HeaderBar(){
       h1 {
         font-size: 18px;
         margin-top:5%;
-        color: white;
+        color: ${text};
         &:hover {
           color:pink;
         }
