@@ -1,4 +1,3 @@
-import React from "react";
 import { css, jsx } from "@emotion/core";
 
 export default function HeaderBar(props) {
@@ -18,14 +17,24 @@ export default function HeaderBar(props) {
       margin-bottom:5%;
       h1 {
 
-        font-size: 18px;
+        font-size: 3.5em;
+        font-family: 'Pacifico', cursive;
+        text-shadow: 7px 6px 0 #00000061;
         color: ${text};
         &:hover {
           color:pink;
         }
       `}
     >
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <h1>React Tutorial</h1>
     </nav>
   );
+
+
 }

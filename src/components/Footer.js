@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { css, jsx } from "@emotion/core";
 import axios from "axios";
 
