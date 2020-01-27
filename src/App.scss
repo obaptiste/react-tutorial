@@ -1,0 +1,14 @@
+nav {
+  li {
+    a {
+      &:before {
+        background : url('./icons/home.svg');
+        content: ''
+      }
+      font-family: 'Bowlby One', cursive;
+      font-size: 1em;
+    }
+  }
+}
+
+

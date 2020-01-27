@@ -6,6 +6,8 @@ import ColorChangeButton from "./components/ColorChangeButton";
 import Home from "./pages/Home";
 import About from "./pages/About";
 
+import './App.scss';
+
 function App() {
   const [colorIndex, setColorIndex] = React.useState(1);
   const colors = [
@@ -28,29 +30,29 @@ function App() {
     <div>
       <div className="App">
         <HeaderBar color={colors[colorIndex + 1]} />
-        <main
-          style={{
-            display: "flex",
-            justifyContent: "center"
-          }}
-        >
-          <ColorChangeButton
-            colorChanged={handleColorChange}
-          ></ColorChangeButton>
-        </main>
-
         <Router>
-          <div>
-            <nav>
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-              </ul>
-            </nav>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <main
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexFlow: "column wrap",
+              alignItems: "center"
+            }}
+          >
+            <ColorChangeButton
+              colorChanged={handleColorChange}
+            ></ColorChangeButton>
 
             <Switch>
               <Route path="/about">
@@ -60,8 +62,9 @@ function App() {
                 <Home />
               </Route>
             </Switch>
-          </div>
+          </main>
         </Router>
+
         <Footer />
       </div>
     </div>
