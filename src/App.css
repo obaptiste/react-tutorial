@@ -1,0 +1,10 @@
+li a {
+    font-family: 'Bowlby One', cursive;
+    font-size: 1.9em;
+    text-decoration: none;
+    font-size: 47px;
+    background: -webkit-linear-gradient(#d100ff, #ff9e0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -1px 2px 3px #00afff4a;
+}
