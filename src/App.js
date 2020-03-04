@@ -47,7 +47,8 @@ function App() {
               display: "flex",
               justifyContent: "center",
               flexFlow: "column wrap",
-              alignItems: "center"
+              alignItems: "center",
+              height: "0vh"
             }}
           >
             <ColorChangeButton

@@ -1,5 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
+import FunkyCount from '../components/FunkyCount';
+import '../about.css';
+export default function About(props) {
+  const  [name, setName] = useState("");
 
-export default function About() {
-  return (<h2>About</h2>);
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    alert(`Submitting Name ${name}`)
+  } 
+  return (
+
+  <div>  
+      <FunkyCount />
+  </div>
+  )
 }

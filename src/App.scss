@@ -2,12 +2,6 @@
 
 nav {
   li {
-    a {
-      &:before {
-        background : url('./icons/home.svg');
-        content: ''
-      }
-    }
     list-style-type: none;
   }
 }

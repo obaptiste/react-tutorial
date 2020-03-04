@@ -3,8 +3,8 @@ li a {
     font-size: 1.9em;
     text-decoration: none;
     font-size: 47px;
-    background: -webkit-linear-gradient(#d100ff, #ff9e0c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: -1px 2px 3px #00afff4a;
+    -webkit-text-stroke: 1px indianred;
+    color: #c4ff92d6;
+    text-shadow:
+     4px 3px 4px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
